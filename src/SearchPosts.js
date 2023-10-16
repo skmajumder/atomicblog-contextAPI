@@ -1,8 +1,7 @@
-import React, { useContext } from "react";
-import { PostContext } from "./contexts/PostProvider";
+import usePosts from "./hooks/usePosts";
 
 function SearchPosts() {
-  const { searchQuery, setSearchQuery } = useContext(PostContext);
+  const { searchQuery, setSearchQuery } = usePosts();
   return (
     <input
       value={searchQuery}
