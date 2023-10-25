@@ -1,7 +1,7 @@
-import React from "react";
+import React, { memo } from "react";
 
-function Footer() {
+const Footer = memo(function Footer() {
   return <footer>&copy; by The Atomic Blog ✌️</footer>;
-}
+});
 
 export default Footer;
